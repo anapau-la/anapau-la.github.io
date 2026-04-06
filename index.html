@@ -245,6 +245,9 @@
         .promo-card.featured {
             border-color: #4a7c59;
             transform: scale(1.05);
+            padding: 3rem;
+            width: fit-content;
+            margin: 0 auto;
         }
 
         .promo-card h4 {
@@ -266,6 +269,30 @@
             margin-bottom: 1rem;
         }
 
+        .price-comparison {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.1rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .before-price {
+            font-size: 1.2rem;
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .now-price {
+            font-size: 2rem;
+            color: #4a7c59;
+            font-weight: bold;
+        }
+
+        .promo-card.featured .now-price {
+            color: #4a7c59;
+        }
+
         .promo-benefits {
             list-style: none;
             padding: 0;
@@ -273,7 +300,7 @@
 
         .promo-benefits li {
             color: #5a6b5d;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             padding-left: 1.2rem;
             position: relative;
         }
@@ -596,21 +623,10 @@
                 <h3>Promo Lanzamiento</h3>
                 <div class="promo-options">
                     <div class="promo-card featured">
-                        <h4>Hasta el 10/10</h4>
-                        <div class="price">$18.000</div>
-                        <div class="price-detail">¡Precio especial!</div>
-                        <ul class="promo-benefits">
-                            <li>Acceso a los 6 videos</li>
-                            <li>Envío por WhatsApp</li>
-                            <li>Link de YouTube</li>
-                            <li>Acceso ilimitado</li>
-                        </ul>
-                    </div>
-
-                    <div class="promo-card">
-                        <h4>Después del 10/10</h4>
-                        <div class="price">$25.000</div>
-                        <div class="price-detail">Precio regular</div>
+                        <div class="price-comparison">
+                            <span class="before-price">Antes: $25.000</span>
+                            <span class="now-price">Ahora: $20.000</span>
+                        </div>
                         <ul class="promo-benefits">
                             <li>Acceso a los 6 videos</li>
                             <li>Envío por WhatsApp</li>
